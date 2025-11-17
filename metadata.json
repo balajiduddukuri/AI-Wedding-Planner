@@ -1,0 +1,5 @@
+{
+  "name": "AI Wedding Planner",
+  "description": "A multi-agent system to automate and optimize wedding planning, delivering personalized recommendations, streamlining vendor communications, and proactively managing event logistics.",
+  "requestFramePermissions": []
+}
