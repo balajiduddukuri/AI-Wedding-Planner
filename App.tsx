@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { AgentCard } from './components/AgentCard';
 import { GlobalLog } from './components/GlobalLog';
+import { Logo } from './components/Logo';
 import { Agent, AgentName, AgentStatus, GlobalLogEntry } from './types';
 import { INITIAL_AGENTS, SIMULATION_SCRIPT } from './constants';
 
@@ -103,7 +103,7 @@ const App: React.FC = () => {
     <div className="bg-sky-50 min-h-screen font-sans text-gray-800">
       <main className="container mx-auto p-4 md:p-8">
         <header className="text-center mb-12">
-          <img src="logo.png" alt="AI Wedding Planner Logo" className="mx-auto mb-8 w-48 h-48 rounded-3xl shadow-lg object-cover" />
+          <Logo className="mx-auto mb-8 w-48 h-48 rounded-3xl shadow-lg" />
           <h1 className="text-5xl md:text-6xl font-extrabold text-gray-800">
             AI Wedding Planner
           </h1>
@@ -177,7 +177,7 @@ const App: React.FC = () => {
                  </div>
                  <div className="flex flex-col items-center">
                      <div className="p-4 bg-sky-100 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542 7z" /></svg>
                      </div>
                      <h3 className="text-xl font-bold mb-2">2. Observe Agents</h3>
                      <p className="text-gray-600">Watch as agents collaborate. Their status, activity, and the global log will update in real-time.</p>
