@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { AgentCard } from './components/AgentCard';
 import { GlobalLog } from './components/GlobalLog';
@@ -102,6 +103,7 @@ const App: React.FC = () => {
     <div className="bg-sky-50 min-h-screen font-sans text-gray-800">
       <main className="container mx-auto p-4 md:p-8">
         <header className="text-center mb-12">
+          <img src="logo.png" alt="AI Wedding Planner Logo" className="mx-auto mb-8 w-48 h-48 rounded-3xl shadow-lg object-cover" />
           <h1 className="text-5xl md:text-6xl font-extrabold text-gray-800">
             AI Wedding Planner
           </h1>
